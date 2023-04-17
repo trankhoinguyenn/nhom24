@@ -362,3 +362,308 @@ void SetColor(WORD color){
     wAttributes &= 0xfff0; wAttributes |= color;
     SetConsoleTextAttribute(hConsoleOutput, wAttributes);
 }
+int Display1()              // To use arrow keys in the menu
+{   int a=0,i=1;
+   
+    	printf("\n\n\t\t**********   CHAO MUNG BAN DEN VOI CHUONG TRINH QUAN LY THONG TIN SINH VIEN  **********");
+		printf("\n\t\t*                                                                                     *");
+		printf("\n\t\t*                                                                                     *");
+		printf("\n\t\t*\t\t >> Them Sinh Vien Vao He Thong                                       *");
+		printf("\n\t\t*\t\t In Danh Sach Sinh Vien Hien Co                                       *");
+		printf("\n\t\t*\t\t Tim Kiem Sinh Vien Theo Ten                                          *");
+		printf("\n\t\t*\t\t Tim Kiem Sinh Vien Theo ID                                           *");
+		printf("\n\t\t*\t\t Sap Xep Sinh Vien Theo Ten Va In Ra Danh Sach                        *");
+		printf("\n\t\t*\t\t Sap Xep Thong Tin Sinh Vien Theo Id Va In Ra Danh Sach               *");
+		printf("\n\t\t*\t\t In Ra Danh Sach Sinh Vien Theo Ten Lop                               *");
+		printf("\n\t\t*\t\t Xoa Thong Tin Sinh Vien Theo Id                                      *");
+		printf("\n\t\t*\t\t Chinh Sua Thong Tin Sinh Vien                                        *");
+		printf("\n\t\t*\t\t Ghi File                                                             *");
+		printf("\n\t\t*\t\t Doc File                                                             *"); 
+		printf("\n\t\t*\t\t Thoat Khoi Chuong Trinh                                              *");
+		printf("\n\t\t***************************************************************************************");
+	while(1)
+    {
+        a=getch();
+        if(a==72)                                      // input code for UP Arrow key
+        {
+            i--;
+        }
+        else if(a==80)                                 // input code for DOWN Arrow key
+        {
+            i++;
+        }
+        else if(a==13)                                 // input code for Enter key
+        {
+            return i;
+        }
+        else
+        {
+         continue;
+        }
+
+
+        if(i<=0)                                       // To keep the value of i between 1 and 11
+            i=1;
+        else if(i>12)
+            i=12;
+        else;
+
+        if(i==1)
+        {
+            system("cls");
+           
+	      	printf("\n\n\t\t**********   CHAO MUNG BAN DEN VOI CHUONG TRINH QUAN LY THONG TIN SINH VIEN  **********");
+		printf("\n\t\t*                                                                                     *");
+		printf("\n\t\t*                                                                                     *");
+		printf("\n\t\t*\t\t >> Them Sinh Vien Vao He Thong                                       *");
+		printf("\n\t\t*\t\t In Danh Sach Sinh Vien Hien Co                                       *");
+		printf("\n\t\t*\t\t Tim Kiem Sinh Vien Theo Ten                                          *");
+		printf("\n\t\t*\t\t Tim Kiem Sinh Vien Theo ID                                           *");
+		printf("\n\t\t*\t\t Sap Xep Sinh Vien Theo Ten Va In Ra Danh Sach                        *");
+		printf("\n\t\t*\t\t Sap Xep Thong Tin Sinh Vien Theo Id Va In Ra Danh Sach               *");
+		printf("\n\t\t*\t\t In Ra Danh Sach Sinh Vien Theo Ten Lop                               *");
+		printf("\n\t\t*\t\t Xoa Thong Tin Sinh Vien Theo Id                                      *");
+		printf("\n\t\t*\t\t Chinh Sua Thong Tin Sinh Vien                                        *");
+		printf("\n\t\t*\t\t Ghi File                                                             *");
+		printf("\n\t\t*\t\t Doc File                                                             *"); 
+		printf("\n\t\t*\t\t Thoat Khoi Chuong Trinh                                              *");
+		printf("\n\t\t***************************************************************************************");
+		
+        }
+        else if(i==2)
+        {
+                system("cls");
+           
+	  	printf("\n\n\t\t**********   CHAO MUNG BAN DEN VOI CHUONG TRINH QUAN LY THONG TIN SINH VIEN  **********");
+		printf("\n\t\t*                                                                                     *");
+		printf("\n\t\t*                                                                                     *");
+		printf("\n\t\t*\t\t Them Sinh Vien Vao He Thong                                          *");
+		printf("\n\t\t*\t\t >> In Danh Sach Sinh Vien Hien Co                                    *");
+		printf("\n\t\t*\t\t Tim Kiem Sinh Vien Theo Ten                                          *");
+		printf("\n\t\t*\t\t Tim Kiem Sinh Vien Theo ID                                           *");
+		printf("\n\t\t*\t\t Sap Xep Sinh Vien Theo Ten Va In Ra Danh Sach                        *");
+		printf("\n\t\t*\t\t Sap Xep Thong Tin Sinh Vien Theo Id Va In Ra Danh Sach               *");
+		printf("\n\t\t*\t\t In Ra Danh Sach Sinh Vien Theo Ten Lop                               *");
+		printf("\n\t\t*\t\t Xoa Thong Tin Sinh Vien Theo Id                                      *");
+		printf("\n\t\t*\t\t Chinh Sua Thong Tin Sinh Vien                                        *");
+		printf("\n\t\t*\t\t Doc File                                                             *");
+		printf("\n\t\t*\t\t Ghi File                                                             *"); 
+		printf("\n\t\t*\t\t Thoat Khoi Chuong Trinh                                              *");
+		printf("\n\t\t***************************************************************************************");
+		
+        }
+        else if(i==3)
+        {
+            system("cls");
+           
+		printf("\n\n\t\t**********   CHAO MUNG BAN DEN VOI CHUONG TRINH QUAN LY THONG TIN SINH VIEN  **********");
+		printf("\n\t\t*                                                                                     *");
+		printf("\n\t\t*                                                                                     *");
+		printf("\n\t\t*\t\t Them Sinh Vien Vao He Thong                                          *");
+		printf("\n\t\t*\t\t In Danh Sach Sinh Vien Hien Co                                       *");
+		printf("\n\t\t*\t\t >> Tim Kiem Sinh Vien Theo Ten                                       *");
+		printf("\n\t\t*\t\t Tim Kiem Sinh Vien Theo ID                                           *");
+		printf("\n\t\t*\t\t Sap Xep Sinh Vien Theo Ten Va In Ra Danh Sach                        *");
+		printf("\n\t\t*\t\t Sap Xep Thong Tin Sinh Vien Theo Id Va In Ra Danh Sach               *");
+		printf("\n\t\t*\t\t In Ra Danh Sach Sinh Vien Theo Ten Lop                               *");
+		printf("\n\t\t*\t\t Xoa Thong Tin Sinh Vien Theo Id                                      *");
+		printf("\n\t\t*\t\t Chinh Sua Thong Tin Sinh Vien                                        *");
+		printf("\n\t\t*\t\t Ghi File                                                             *");
+		printf("\n\t\t*\t\t Doc File                                                             *"); 
+		printf("\n\t\t*\t\t Thoat Khoi Chuong Trinh                                              *");
+		printf("\n\t\t***************************************************************************************");
+		}
+        else if(i==4)
+        {
+           system("cls");
+           
+		printf("\n\n\t\t**********   CHAO MUNG BAN DEN VOI CHUONG TRINH QUAN LY THONG TIN SINH VIEN  **********");
+		printf("\n\t\t*                                                                                     *");
+		printf("\n\t\t*                                                                                     *");
+		printf("\n\t\t*\t\t Them Sinh Vien Vao He Thong                                          *");
+		printf("\n\t\t*\t\t In Danh Sach Sinh Vien Hien Co                                       *");
+		printf("\n\t\t*\t\t Tim Kiem Sinh Vien Theo Ten                                          *");
+		printf("\n\t\t*\t\t >> Tim Kiem Sinh Vien Theo ID                                        *");
+		printf("\n\t\t*\t\t Sap Xep Sinh Vien Theo Ten Va In Ra Danh Sach                        *");
+		printf("\n\t\t*\t\t Sap Xep Thong Tin Sinh Vien Theo Id Va In Ra Danh Sach               *");
+		printf("\n\t\t*\t\t In Ra Danh Sach Sinh Vien Theo Ten Lop                               *");
+		printf("\n\t\t*\t\t Xoa Thong Tin Sinh Vien Theo Id                                      *");
+		printf("\n\t\t*\t\t Chinh Sua Thong Tin Sinh Vien                                        *");
+		printf("\n\t\t*\t\t Ghi File                                                             *");
+		printf("\n\t\t*\t\t Doc File                                                             *"); 
+		printf("\n\t\t*\t\t Thoat Khoi Chuong Trinh                                              *");
+		printf("\n\t\t***************************************************************************************");
+		}
+        else if(i==5)
+        {
+             system("cls");
+           
+	  	printf("\n\n\t\t**********   CHAO MUNG BAN DEN VOI CHUONG TRINH QUAN LY THONG TIN SINH VIEN  **********");
+		printf("\n\t\t*                                                                                     *");
+		printf("\n\t\t*                                                                                     *");
+		printf("\n\t\t*\t\t Them Sinh Vien Vao He Thong                                          *");
+		printf("\n\t\t*\t\t In Danh Sach Sinh Vien Hien Co                                       *");
+		printf("\n\t\t*\t\t Tim Kiem Sinh Vien Theo Ten                                          *");
+		printf("\n\t\t*\t\t Tim Kiem Sinh Vien Theo ID                                           *");
+		printf("\n\t\t*\t\t >> Sap Xep Sinh Vien Theo Ten Va In Ra Danh Sach                     *");
+		printf("\n\t\t*\t\t Sap Xep Thong Tin Sinh Vien Theo Id Va In Ra Danh Sach               *");
+		printf("\n\t\t*\t\t In Ra Danh Sach Sinh Vien Theo Ten Lop                               *");
+		printf("\n\t\t*\t\t Xoa Thong Tin Sinh Vien Theo Id                                      *");
+		printf("\n\t\t*\t\t Chinh Sua Thong Tin Sinh Vien                                        *");
+		printf("\n\t\t*\t\t Ghi File                                                             *");
+		printf("\n\t\t*\t\t Doc File                                                             *"); 
+		printf("\n\t\t*\t\t Thoat Khoi Chuong Trinh                                              *");
+		printf("\n\t\t***************************************************************************************");
+		}
+        else if(i==6)
+        {
+           system("cls");
+           
+  		printf("\n\n\t\t**********   CHAO MUNG BAN DEN VOI CHUONG TRINH QUAN LY THONG TIN SINH VIEN  **********");
+		printf("\n\t\t*                                                                                     *");
+		printf("\n\t\t*                                                                                     *");
+		printf("\n\t\t*\t\t Them Sinh Vien Vao He Thong                                          *");
+		printf("\n\t\t*\t\t In Danh Sach Sinh Vien Hien Co                                       *");
+		printf("\n\t\t*\t\t Tim Kiem Sinh Vien Theo Ten                                          *");
+		printf("\n\t\t*\t\t Tim Kiem Sinh Vien Theo ID                                           *");
+		printf("\n\t\t*\t\t Sap Xep Sinh Vien Theo Ten Va In Ra Danh Sach                        *");
+		printf("\n\t\t*\t\t >> Sap Xep Thong Tin Sinh Vien Theo Id Va In Ra Danh Sach            *");
+		printf("\n\t\t*\t\t In Ra Danh Sach Sinh Vien Theo Ten Lop                               *");
+		printf("\n\t\t*\t\t Xoa Thong Tin Sinh Vien Theo Id                                      *");
+		printf("\n\t\t*\t\t Chinh Sua Thong Tin Sinh Vien                                        *");
+		printf("\n\t\t*\t\t Ghi File                                                             *");
+		printf("\n\t\t*\t\t Doc File                                                             *"); 
+		printf("\n\t\t*\t\t Thoat Khoi Chuong Trinh                                              *");
+		printf("\n\t\t***************************************************************************************");
+        }
+        else if(i==7)
+        {
+       system("cls");
+  		printf("\n\n\t\t**********   CHAO MUNG BAN DEN VOI CHUONG TRINH QUAN LY THONG TIN SINH VIEN  **********");
+		printf("\n\t\t*                                                                                     *");
+		printf("\n\t\t*                                                                                     *");
+		printf("\n\t\t*\t\t Them Sinh Vien Vao He Thong                                          *");
+		printf("\n\t\t*\t\t In Danh Sach Sinh Vien Hien Co                                       *");
+		printf("\n\t\t*\t\t Tim Kiem Sinh Vien Theo Ten                                          *");
+		printf("\n\t\t*\t\t Tim Kiem Sinh Vien Theo ID                                           *");
+		printf("\n\t\t*\t\t Sap Xep Sinh Vien Theo Ten Va In Ra Danh Sach                        *");
+		printf("\n\t\t*\t\t Sap Xep Thong Tin Sinh Vien Theo Id Va In Ra Danh Sach               *");
+		printf("\n\t\t*\t\t >> In Ra Danh Sach Sinh Vien Theo Ten Lop                            *");
+		printf("\n\t\t*\t\t Xoa Thong Tin Sinh Vien Theo Id                                      *");
+		printf("\n\t\t*\t\t Chinh Sua Thong Tin Sinh Vien                                        *");
+		printf("\n\t\t*\t\t Ghi File                                                             *");
+		printf("\n\t\t*\t\t Doc File                                                             *"); 
+		printf("\n\t\t*\t\t Thoat Khoi Chuong Trinh                                              *");
+		printf("\n\t\t***************************************************************************************");
+        }
+        else if(i==8)
+        {
+           system("cls");
+           
+		printf("\n\n\t\t**********   CHAO MUNG BAN DEN VOI CHUONG TRINH QUAN LY THONG TIN SINH VIEN  **********");
+		printf("\n\t\t*                                                                                     *");
+		printf("\n\t\t*                                                                                     *");
+		printf("\n\t\t*\t\t Them Sinh Vien Vao He Thong                                          *");
+		printf("\n\t\t*\t\t In Danh Sach Sinh Vien Hien Co                                       *");
+		printf("\n\t\t*\t\t Tim Kiem Sinh Vien Theo Ten                                          *");
+		printf("\n\t\t*\t\t Tim Kiem Sinh Vien Theo ID                                           *");
+		printf("\n\t\t*\t\t Sap Xep Sinh Vien Theo Ten Va In Ra Danh Sach                        *");
+		printf("\n\t\t*\t\t Sap Xep Thong Tin Sinh Vien Theo Id Va In Ra Danh Sach               *");
+		printf("\n\t\t*\t\t In Ra Danh Sach Sinh Vien Theo Ten Lop                               *");
+		printf("\n\t\t*\t\t >> Xoa Thong Tin Sinh Vien Theo Id                                   *");
+		printf("\n\t\t*\t\t Chinh Sua Thong Tin Sinh Vien                                        *");
+		printf("\n\t\t*\t\t Ghi File                                                             *");
+		printf("\n\t\t*\t\t Doc File                                                             *"); 
+		printf("\n\t\t*\t\t Thoat Khoi Chuong Trinh                                              *");
+		printf("\n\t\t***************************************************************************************");
+        }
+        else if(i==9)
+        {
+            system("cls");
+           
+		printf("\n\n\t\t**********   CHAO MUNG BAN DEN VOI CHUONG TRINH QUAN LY THONG TIN SINH VIEN  **********");
+		printf("\n\t\t*                                                                                     *");
+		printf("\n\t\t*                                                                                     *");
+		printf("\n\t\t*\t\t Them Sinh Vien Vao He Thong                                          *");
+		printf("\n\t\t*\t\t In Danh Sach Sinh Vien Hien Co                                       *");
+		printf("\n\t\t*\t\t Tim Kiem Sinh Vien Theo Ten                                          *");
+		printf("\n\t\t*\t\t Tim Kiem Sinh Vien Theo ID                                           *");
+		printf("\n\t\t*\t\t Sap Xep Sinh Vien Theo Ten Va In Ra Danh Sach                        *");
+		printf("\n\t\t*\t\t Sap Xep Thong Tin Sinh Vien Theo Id Va In Ra Danh Sach               *");
+		printf("\n\t\t*\t\t In Ra Danh Sach Sinh Vien Theo Ten Lop                               *");
+		printf("\n\t\t*\t\t Xoa Thong Tin Sinh Vien Theo Id                                      *");
+		printf("\n\t\t*\t\t >> Chinh Sua Thong Tin Sinh Vien                                     *");
+		printf("\n\t\t*\t\t Ghi File                                                             *");
+		printf("\n\t\t*\t\t Doc File                                                             *"); 
+		printf("\n\t\t*\t\t Thoat Khoi Chuong Trinh                                              *");
+		printf("\n\t\t***************************************************************************************");
+        }
+          else if(i==10)
+        {
+           system("cls");
+           
+	            
+		printf("\n\n\t\t**********   CHAO MUNG BAN DEN VOI CHUONG TRINH QUAN LY THONG TIN SINH VIEN  **********");
+		printf("\n\t\t*                                                                                     *");
+		printf("\n\t\t*                                                                                     *");
+		printf("\n\t\t*\t\t Them Sinh Vien Vao He Thong                                          *");
+		printf("\n\t\t*\t\t In Danh Sach Sinh Vien Hien Co                                       *");
+		printf("\n\t\t*\t\t Tim Kiem Sinh Vien Theo Ten                                          *");
+		printf("\n\t\t*\t\t Tim Kiem Sinh Vien Theo ID                                           *");
+		printf("\n\t\t*\t\t Sap Xep Sinh Vien Theo Ten Va In Ra Danh Sach                        *");
+		printf("\n\t\t*\t\t Sap Xep Thong Tin Sinh Vien Theo Id Va In Ra Danh Sach               *");
+		printf("\n\t\t*\t\t In Ra Danh Sach Sinh Vien Theo Ten Lop                               *");
+		printf("\n\t\t*\t\t Xoa Thong Tin Sinh Vien Theo Id                                      *");
+		printf("\n\t\t*\t\t Chinh Sua Thong Tin Sinh Vien                                        *");
+		printf("\n\t\t*\t\t >> Ghi File                                                          *");
+		printf("\n\t\t*\t\t Doc File                                                             *"); 
+		printf("\n\t\t*\t\t Thoat Khoi Chuong Trinh                                              *");
+		printf("\n\t\t***************************************************************************************");
+        }
+          else if(i==11)
+        {
+           system("cls");
+           
+			printf("\n\n\t\t**********   CHAO MUNG BAN DEN VOI CHUONG TRINH QUAN LY THONG TIN SINH VIEN  **********");
+		printf("\n\t\t*                                                                                     *");
+		printf("\n\t\t*                                                                                     *");
+		printf("\n\t\t*\t\t Them Sinh Vien Vao He Thong                                          *");
+		printf("\n\t\t*\t\t In Danh Sach Sinh Vien Hien Co                                       *");
+		printf("\n\t\t*\t\t Tim Kiem Sinh Vien Theo Ten                                          *");
+		printf("\n\t\t*\t\t Tim Kiem Sinh Vien Theo ID                                           *");
+		printf("\n\t\t*\t\t Sap Xep Sinh Vien Theo Ten Va In Ra Danh Sach                        *");
+		printf("\n\t\t*\t\t Sap Xep Thong Tin Sinh Vien Theo Id Va In Ra Danh Sach               *");
+		printf("\n\t\t*\t\t In Ra Danh Sach Sinh Vien Theo Ten Lop                               *");
+		printf("\n\t\t*\t\t Xoa Thong Tin Sinh Vien Theo Id                                      *");
+		printf("\n\t\t*\t\t Chinh Sua Thong Tin Sinh Vien                                        *");
+		printf("\n\t\t*\t\t Ghi File                                                             *");
+		printf("\n\t\t*\t\t >> Doc File                                                          *"); 
+		printf("\n\t\t*\t\t Thoat Khoi Chuong Trinh                                              *");
+		printf("\n\t\t***************************************************************************************");
+        }
+        else if(i==12)
+        {
+           system("cls");
+           
+		printf("\n\n\t\t**********   CHAO MUNG BAN DEN VOI CHUONG TRINH QUAN LY THONG TIN SINH VIEN  **********");
+		printf("\n\t\t*                                                                                     *");
+		printf("\n\t\t*                                                                                     *");
+		printf("\n\t\t*\t\t Them Sinh Vien Vao He Thong                                          *");
+		printf("\n\t\t*\t\t In Danh Sach Sinh Vien Hien Co                                       *");
+		printf("\n\t\t*\t\t Tim Kiem Sinh Vien Theo Ten                                          *");
+		printf("\n\t\t*\t\t Tim Kiem Sinh Vien Theo ID                                           *");
+		printf("\n\t\t*\t\t Sap Xep Sinh Vien Theo Ten Va In Ra Danh Sach                        *");
+		printf("\n\t\t*\t\t Sap Xep Thong Tin Sinh Vien Theo Id Va In Ra Danh Sach               *");
+		printf("\n\t\t*\t\t In Ra Danh Sach Sinh Vien Theo Ten Lop                               *");
+		printf("\n\t\t*\t\t Xoa Thong Tin Sinh Vien Theo Id                                      *");
+		printf("\n\t\t*\t\t Chinh Sua Thong Tin Sinh Vien                                        *");
+		printf("\n\t\t*\t\t Ghi File                                                             *");
+		printf("\n\t\t*\t\t Doc File                                                             *"); 
+		printf("\n\t\t*\t\t >> Thoat Khoi Chuong Trinh                                           *");
+		printf("\n\t\t***************************************************************************************");
+        }
+        else{}
+        
+    }
+    
+}
